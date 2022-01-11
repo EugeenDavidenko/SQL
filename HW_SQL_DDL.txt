@@ -1,0 +1,114 @@
+ 
+ 		SQL_DDL.Первая часть.
+
+Таблица employees
+
+1)Создать таблицу employees
+
+ create table employees (
+           id serial primary key,
+employee_name Varchar(50) not null
+);
+
+2) Наполнить таблицу employee 70 строками
+
+insert into employees (id,employee_name)
+values   (1,'Eugeen'),
+         (2,'Asya'),
+	 (3,'Vasya'),
+	 (4,'Basya'),
+	 (5,'Casya'),
+	 (6,'Dasya'),
+	 (7,'Мasya'),
+	 (8,'Tasya'),
+	 (9,'Wasya'),
+         (10,'Vasya_1'),
+         (11,'Vasya_2'),
+         (12,'Vasya_3'),
+         (13,'Vasya_4'),
+         (14,'Vasya_5'),
+         (15,'Vasya_6'),
+         (16,'Vasya_7'),
+         (17,'Vasya_8'),
+         (18,'Vasya_9'),
+         (19,'Vasya_10'),
+         (20,'Dasya_1'),
+         (21,'Dasya_2'),
+         (22,'Dasya_3'),
+         (23,'Dasya_4'),
+         (24,'Dasya_5'),
+         (25,'Dasya_6'),
+         (26,'Dasya_7'),
+         (27,'Dasya_8'),
+         (28,'Dasya_9'),
+         (29,'Dasya_10'),
+         (30,'Tasya_1'),
+         (31,'Tasya_2'),
+         (32,'Tasya_3'),
+         (33,'Tasya_4'),
+         (34,'Tasya_5'),
+         (35,'Tasya_6'),
+         (36,'Tasya_7'),
+         (37,'Tasya_8'),
+         (38,'Tasya_9'),
+         (39,'Tasya_10'),
+         (40,'Tasya_11'),
+         (41,'Masya_1'),
+         (42,'Masya_2'),
+         (43,'Masya_3'),
+         (44,'Masya_4'),
+         (45,'Masya_5'),
+         (46,'Masya_6'),
+         (47,'Masya_7'),
+         (48,'Masya_8'),
+         (49,'Masya_9'),
+         (50,'Masya_10'),
+         (51,'Asya_1'),
+         (52,'Asya_2'),
+         (53,'Asya_3'),
+         (54,'Asya_4'),
+         (55,'Asya_5'),
+         (56,'Asya_6'),
+         (57,'Asya_7'),
+         (58,'Asya_8'),
+         (59,'Asya_9'),
+         (60,'Asya_10'),
+         (61,'Eugeen_1'),
+         (62,'Eugeen_2'),
+         (63,'Eugeen_3'),
+         (64,'Eugeen_4'),
+         (65,'Eugeen_5'),
+         (66,'Eugeen_6'),
+         (67,'Eugeen_7'),
+         (68,'Eugeen_8'),
+         (69,'Eugeen_9'),
+         (70,'Eugeen_10');
+
+Таблица salary
+
+1) Создать таблицу salary
+
+    create table salary (
+              id serial primary key,
+  monthly_salary Int not null
+ );
+
+2) Наполнить таблицу salary 15 строками:
+
+insert into salary (id,monthly_salary)
+values   (1,1000),
+         (2,1100),
+         (3,1200),
+         (4,1300),
+         (5,1400),
+         (6,1500),
+         (7,1600),
+         (8,1700),
+         (9,1800),
+         (10,1900),
+         (11,2000),
+         (12,2100),
+         (13,2200),
+         (14,2300),
+         (15,2400),
+	 (16,2500)
