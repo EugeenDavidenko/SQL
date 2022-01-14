@@ -1,263 +1,323 @@
- 
- 		SQL_DDL.Первая часть.
+			SQL_DDL.Первая часть.
 
 Таблица employees
 
-1)Создать таблицу employees
 
- create table employees (
-           id serial primary key,
-employee_name Varchar(50) not null
-);
+1.	Создать таблицу employees
+- id. serial,  primary key,
+- employee_name. Varchar(50), not null
 
-2) Наполнить таблицу employee 70 строками
+create table employees (
+	id serial primary key,
+	employee_name varchar(50) not null
+)
 
-insert into employees (id,employee_name)
-values   (1,'Eugeen'),
-         (2,'Asya'),
-	 (3,'Vasya'),
-	 (4,'Basya'),
-	 (5,'Casya'),
-	 (6,'Dasya'),
-	 (7,'Мasya'),
-	 (8,'Tasya'),
-	 (9,'Wasya'),
-         (10,'Vasya_1'),
-         (11,'Vasya_2'),
-         (12,'Vasya_3'),
-         (13,'Vasya_4'),
-         (14,'Vasya_5'),
-         (15,'Vasya_6'),
-         (16,'Vasya_7'),
-         (17,'Vasya_8'),
-         (18,'Vasya_9'),
-         (19,'Vasya_10'),
-         (20,'Dasya_1'),
-         (21,'Dasya_2'),
-         (22,'Dasya_3'),
-         (23,'Dasya_4'),
-         (24,'Dasya_5'),
-         (25,'Dasya_6'),
-         (26,'Dasya_7'),
-         (27,'Dasya_8'),
-         (28,'Dasya_9'),
-         (29,'Dasya_10'),
-         (30,'Tasya_1'),
-         (31,'Tasya_2'),
-         (32,'Tasya_3'),
-         (33,'Tasya_4'),
-         (34,'Tasya_5'),
-         (35,'Tasya_6'),
-         (36,'Tasya_7'),
-         (37,'Tasya_8'),
-         (38,'Tasya_9'),
-         (39,'Tasya_10'),
-         (40,'Tasya_11'),
-         (41,'Masya_1'),
-         (42,'Masya_2'),
-         (43,'Masya_3'),
-         (44,'Masya_4'),
-         (45,'Masya_5'),
-         (46,'Masya_6'),
-         (47,'Masya_7'),
-         (48,'Masya_8'),
-         (49,'Masya_9'),
-         (50,'Masya_10'),
-         (51,'Asya_1'),
-         (52,'Asya_2'),
-         (53,'Asya_3'),
-         (54,'Asya_4'),
-         (55,'Asya_5'),
-         (56,'Asya_6'),
-         (57,'Asya_7'),
-         (58,'Asya_8'),
-         (59,'Asya_9'),
-         (60,'Asya_10'),
-         (61,'Eugeen_1'),
-         (62,'Eugeen_2'),
-         (63,'Eugeen_3'),
-         (64,'Eugeen_4'),
-         (65,'Eugeen_5'),
-         (66,'Eugeen_6'),
-         (67,'Eugeen_7'),
-         (68,'Eugeen_8'),
-         (69,'Eugeen_9'),
-         (70,'Eugeen_10');
+
+2.	Наполнить таблицу employee 70 строками.
+
+ insert into employees (employee_name)
+	        values ('Eugeen_1'),
+		       ('Eugeen_2'),
+		       ('Eugeen_3'),
+		       ('Eugeen_4'),
+		       ('Eugeen_5'),
+		       ('Eugeen_6'),
+		       ('Eugeen_7'),
+		       ('Eugeen_8'),
+		       ('Eugeen_9'),
+		       ('Eugeen_10'),
+		       ('Bocman_1'),
+		       ('Bocman_2'),
+		       ('Bocman_3'),
+		       ('Bocman_4'),
+		       ('Bocman_5'),
+		       ('Bocman_6'),
+		       ('Bocman_7'),
+		       ('Bocman_8'),
+	               ('Bocman_9'),
+		       ('Bocman_10'),
+		       ('Alex_1'),
+		       ('Alex_2'),
+		       ('Alex_3'),
+		       ('Alex_4'),
+		       ('Alex_5'),
+		       ('Alex_6'),
+	               ('Alex_7'),
+                       ('Alex_8'),
+                       ('Alex_9'),
+                       ('Alex_10'),
+                       ('Vitya_1'),
+                       ('Vitya_2'),
+                       ('Vitya_3'),
+                       ('Vitya_4'),
+                       ('Vitya_5'),
+                       ('Vitya_6'),
+                       ('Vitya_7'),
+                       ('Vitya_8'),
+                       ('Vitya_9'),
+                       ('Vitya_10'),
+                       ('Migus_1'),
+                       ('Migus_2'),
+                       ('Migus_3'),
+                       ('Migus_4'),
+                       ('Migus_5'),
+	               ('Migus_6'),
+                       ('Migus_7'),
+		       ('Migus_8'),
+		       ('Migus_9'),
+		       ('Migus_10'),
+		       ('Bocha_1'),
+		       ('Bocha_2'),
+		       ('Bocha_3'),
+                       ('Bocha_4'),
+                       ('Bocha_5'),
+                       ('Bocha_6'),
+                       ('Bocha_7'),
+                       ('Bocha_8'),
+                       ('Bocha_9'),
+                       ('Bocha_10'),
+	               ('Pasha_1'),
+	               ('Pasha_2'),
+	               ('Pasha_3'),
+                       ('Pasha_4'),
+	               ('Pasha_5'),
+                       ('Pasha_6'),
+                       ('Pasha_7'),
+                       ('Pasha_8'),
+                       ('Pasha_9'),
+                       ('Pasha_10')
+
+
 
 Таблица salary
 
-1) Создать таблицу salary
+3.	Создать таблицу salary
+- id. Serial  primary key,
+- monthly_salary. Int, not null
 
-    create table salary (
-              id serial primary key,
-  monthly_salary Int not null
- );
+create table salary (
+            id serial primary key,
+monthly_salary int not null
+)
 
-2) Наполнить таблицу salary 15 строками:
+4.	Наполнить таблицу salary 15 строками:
+- 1000
+- 1100
+- 1200
+- 1300
+- 1400
+- 1500
+- 1600
+- 1700
+- 1800
+- 1900
+- 2000
+- 2100
+- 2200
+- 2300
+- 2400
+- 2500
 
-insert into salary (id,monthly_salary)
-values   (1,1000),
-         (2,1100),
-         (3,1200),
-         (4,1300),
-         (5,1400),
-         (6,1500),
-         (7,1600),
-         (8,1700),
-         (9,1800),
-         (10,1900),
-         (11,2000),
-         (12,2100),
-         (13,2200),
-         (14,2300),
-         (15,2400),
-	 (16,2500)
+insert into salary (monthly_salary)
+values  (1000),
+	(1100),
+	(1200),
+	(1300),
+	(1400),
+	(1500),
+	(1600),
+	(1700),
+	(1800),
+	(1900),
+	(2000),
+	(2100),
+	(2200),
+	(2300),
+	(2400),
+	(2500)
+
 
 Таблица employee_salary
 
-1) Создать таблицу employee_salary
- 
- create table employee_salary (
-           id serial primary key,
-  employee_id int not null unique,
-    salary_id int not null
-    );
+5.	Создать таблицу employee_salary - переделать в дбивере
+- id. Serial  primary key,
+- employee_id. Int, not null, unique
+- salary_id. Int, not null
 
-2) Наполнить таблицу employee_salary 40 строками (в 10 строк из 40 вставить несуществующие employee_id)
-Данные для первых 10 строк берем из задания. Чтобы указать несуществующие employee_id указываем в 10 строках employee_id > 70 т.к. это максимальное значение id в таблице employees.
+create table employee_salary(
+id serial primary key,
+employee_id int not null unique,
+salary_id int not null
+)
 
-insert into employee_salary (id,employee_id,salary_id )
-values   (1,3,7),
-         (2,1,4),
-         (3,5,9),
-         (4,40,13),
-         (5,23,4),
-         (6,11,2),
-         (7,52,10),
-         (8,15,13),
-         (9,26,4),
-         (10,16,1),
-         (11,33,7),
-         (12,6,8),
-         (13,4,5),
-         (14,71,10),
-         (15,43,14),
-         (16,27,5),
-         (17,72,3),
-         (18,55,11),
-         (19,18,15),
-         (20,73,6),
-         (21,19,3),
-         (22,36,2),
-         (23,74,20),
-         (24,10,3),
-         (25,9,16),
-         (26,75,23),
-         (27,28,11),
-         (28,17,9),
-         (29,76,17),
-         (30,20,29),
-         (31,30,12),
-         (32,77,30),
-         (33,37,6),
-         (34,78,5),
-         (35,13,2),
-         (36,79,1),
-         (37,31,14),
-         (38,22,28),
-         (39,80,19),
-         (40,24,12)
+6.	Наполнить таблицу employee_salary 40 строками:
+- в 10 строк из 40 вставить несуществующие employee_id
+Данные для первых 10 строк берем из задания. 
+Чтобы указать несуществующие employee_id указываем в 10 строках employee_id > 70 т.к. это максимальное значение id в таблице employees.
+выполняем запрос 
 
+insert into employee_salary (employee_id,salary_id)
+values (3,7),
+(1,4),
+(5,9),
+(40,13),
+(23,4),
+(11,2),
+(52,10),
+(15,13),
+(26,4),
+(16,1),
+(33,7),
+(71,3),
+(4,5),
+(72,6),
+(25,15),
+(73,10),
+(51,9),
+(74,11),
+(30,14),
+(75,16),
+(35,2),
+(76,6),
+(44,9),
+(77,12),
+(45,15),
+(78,14),
+(50,11),
+(79,8),
+(55,5),
+(80,2),
+(22,1),
+(32,4),
+(27,7),
+(41,10),
+(37,13),
+(53,16),
+(49,12),
+(17,9),
+(20,6),
+(42,3)
 
-Таблица roles.
+7.	Создать таблицу roles
+- id. Serial  primary key,
+- role_name. int, not null, unique
 
-Создать таблицу roles.
+create table roles(
+id serial primary key,
+role_name int not null unique
+)
 
-create table roles (
-          id serial primary key,
-   role_name int not null unique
-);
+8.	Поменять тип столба role_name с int на varchar(30)
 
-Поменять тип столба role_name с int на varchar(30)
+alter table roles 
+alter column role_name type varchar(30)
 
-alter table roles
-alter column role_name type varchar(30);
+9.	Наполнить таблицу roles 20 строками:
+insert into roles (role_name)
+values ('Junior Python developer'),
+('Middle Python developer'),
+('Senior Python developer'),
+('Junior Java developer'),
+('Middle Java developer'),
+('Senior Java developer'),
+('Junior JavaScript developer'),
+('Middle JavaScript developer'),
+('Senior JavaScript developer'),
+('Junior Manual QA engineer'),
+('Middle Manual QA engineer'),
+('Senior Manual QA engineer'),
+('Project Manager'),
+('Designer'),
+('HR'),
+('CEO'),
+('Sales manager'),
+('Junior Automation QA engineer'),
+('Middle Automation QA engineer'),
+('Senior Automation QA engineer')
 
-Наполнить таблицу roles 20 строками:
-
-insert into roles
-values (1,'Junior Python developer'),
-       (2,'Middle Python developer'),
-       (3,'Senior Python developer'),
-       (4,'Junior Java developer'),
-       (5,'Middle Java developer'),
-       (6,'Senior Java developer'),
-       (7,'Junior JavaScript developer'),
-       (8,'Middle JavaScript developer'),
-       (9,'Senior JavaScript developer'),
-       (10,'Junior Manual QA engineer'),
-       (11,'Middle Manual QA engineer'),
-       (12,'Senior Manual QA engineer'),
-       (13,'Project Manager'),
-       (14,'Designer'),
-       (15,'HR'),
-       (16,'CEO'),
-       (17,'Sales manager'),
-       (18,'Junior Automation QA engineer'),
-       (19,'Middle Automation QA engineer'),
-       (20,'Senior Automation QA engineer')
 
 Таблица roles_employee
 
-Создать таблицу roles_employee
+10.	Создать таблицу roles_employee
+- id. Serial  primary key,
+- employee_id. Int, not null, unique (внешний ключ для таблицы employees, поле id)
+- role_id. Int, not null (внешний ключ для таблицы roles, поле id)
 
 create table roles_employee (
           id serial  primary key,
- employee_id int not null unique references employees (id),
-     role_id int not null references roles(id)
+ employee_id int not null unique ,
+     role_id int not null references roles(id),
+     foreign key (employee_id) references employees (id),
+     foreign key (role_id) references roles(id)
 );
 
 
-Наполнить таблицу roles_employee 40 строками (10 строк из задания, остальные 30 используя допустимые значения из связанных таблиц):
+11.	Наполнить таблицу roles_employee 40 строками:
 
-insert into roles_employee
-values  (1,7,2),
-	(2,20,4),
-	(3,3,9),
-	(4,5,13),
-	(5,23,4),
-	(6,11,2),
-	(7,10,9),
-	(8,22,13),
-	(9,21,3),
-	(10,34,4),
-	(11,6,7),
-	(12,1,1),
-	(13,2,5),
-	(14,4,6),
-	(15,8,8),
-	(16,9,10),
-	(17,12,11),
-	(18,13,12),
-	(19,14,14),
-	(20,15,15),
-	(21,16,16),
-	(22,17,17),
-	(23,18,18),
-	(24,19,19),
-	(25,24,20),
-	(26,25,19),
-	(27,26,18),
-	(28,27,17),
-	(29,28,16),
-	(30,29,15),
-	(31,30,14),
-	(32,31,13),
-	(33,32,12),
-	(34,33,11),
-	(35,35,10),
-	(36,36,9),
-	(37,37,8),
-	(38,38,7),
-	(39,39,6),
-	(40,40,5)
+insert into roles_employee (employee_id,role_id)
+values  (7,2),
+        (20,4),
+        (3,9),
+        (5,13),
+        (23,4),
+        (11,2),
+        (10,9),
+        (22,13),
+        (21,3),
+        (34,4),
+        (6,7),
+        (1,1),
+        (2,5),
+        (4,6),
+        (8,8),
+        (9,10),
+        (12,11),
+        (13,12),
+        (14,14),
+        (15,15),
+        (16,16),
+        (17,17),
+        (18,18),
+        (19,19),
+        (24,20),
+        (35,19),
+        (46,18),
+        (57,17),
+        (68,16),
+        (49,15),
+        (30,14),
+        (51,13),
+        (42,12),
+        (26,11),
+        (33,10),
+        (56,9),
+        (27,8),
+        (58,7),
+        (69,6),
+        (70,5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
