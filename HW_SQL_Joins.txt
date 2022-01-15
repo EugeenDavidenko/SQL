@@ -55,11 +55,48 @@ join employees on roles_employee.employee_id=employees.id
 join roles on roles_employee.role_id=roles.id;
 
  7. Вывести имена и должность только Java разработчиков.
+
+select employee_name,role_name 
+from roles_employee
+join employees on roles_employee.employee_id=employees.id
+join roles on roles_employee.role_id=roles.id        
+where role_name like '%Java%'
+
  8. Вывести имена и должность только Python разработчиков.
+
+select employee_name,role_name 
+from roles_employee
+join employees on roles_employee.employee_id=employees.id
+join roles on roles_employee.role_id=roles.id        
+where role_name like '%Python%'
+
  9. Вывести имена и должность всех QA инженеров.
+
+select employee_name,role_name 
+from roles_employee
+join employees on roles_employee.employee_id=employees.id
+join roles on roles_employee.role_id=roles.id        
+where role_name like '%QA engineer%' 
+
  10. Вывести имена и должность ручных QA инженеров.
+
+select employee_name,role_name 
+from roles_employee
+join employees on roles_employee.employee_id=employees.id
+join roles on roles_employee.role_id=roles.id        
+where role_name like '%Manual QA engineer%' 
+
  11. Вывести имена и должность автоматизаторов QA
+
+select employee_name,role_name 
+from roles_employee
+join employees on roles_employee.employee_id=employees.id
+join roles on roles_employee.role_id=roles.id        
+where role_name like '%Automation QA engineer%'
+
  12. Вывести имена и зарплаты Junior специалистов
+
+
  13. Вывести имена и зарплаты Middle специалистов
  14. Вывести имена и зарплаты Senior специалистов
  15. Вывести зарплаты Java разработчиков
